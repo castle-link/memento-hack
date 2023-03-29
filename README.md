@@ -99,3 +99,6 @@ yarn run:workers
 ```
 
 Each time a worker is updated, you will need to run `yarn build:workers` again
+
+# Contracts
+Custom smart contracts were developed for this hack. You can find them in the `contracts` folder in the root directory. The contracts were developed with Foundry.
