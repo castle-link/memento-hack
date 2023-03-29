@@ -1,0 +1,55 @@
+import {
+	Meta,
+	Story,
+	Props,
+	Preview,
+	ArgsTable,
+} from '@storybook/addon-docs/blocks'
+import { Modal } from './modal.component'
+
+<Meta title="Overlays/Modal" component={Modal} />
+
+# Modal
+
+The Modal presents a modal, with a faded background around the modal.
+
+The modal takes in:
+
+- any React element as its body
+- a `show` prop (whether to actually display the modal or not)
+- a `onClose` prop that will be called when the user clicks the `Close` icon OR
+  the background (since they would expect the modal to then close).
+
+## useModal
+
+In most cases, you should use the modal in conjunction with the `useModal` hook,
+as such:
+
+```
+const Page = () => {
+  const { showModal, onModalClose, onModalToggle } = useModal();
+  return (
+    <>
+      <Button onClick={onModalToggle}>
+        Open Modal
+      </Button>
+
+      <Modal show={showModal} onClose={onModalClose}>
+        <div>Something amazing I guess</div>
+      </Modal>
+    </>
+  );
+};
+```
+
+## Stories
+
+See left navigation to view modal stories, one by one.
+
+## Supported Property Mixins
+
+Stackee
+
+## Props
+
+<ArgsTable of={Modal} />

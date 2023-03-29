@@ -1,0 +1,56 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"esModuleInterop": true,
+		"allowJs": true,
+		"strict": true,
+		"allowSyntheticDefaultImports": true,
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"target": "es2021",
+		"outDir": "../.workers-build",
+		"jsx": "preserve",
+		"downlevelIteration": true,
+		"paths": {
+			"@/blockchain/*": ["../src/blockchain/*"],
+			"@/components/*": ["../src/components/*"],
+			"@/compound/*": ["../src/compound/*"],
+			"@/compound": ["../src/compound/index"],
+			"@/config": ["../src/config/index"],
+			"@/queries": ["../src/queries/index"],
+			"@/queries/": ["../src/queries/index"],
+			"@/queries/*": ["../src/queries/*"],
+			"@/context/*": ["../src/context/*"],
+			"@/context": ["../src/context/index"],
+			"@/constants/*": ["../src/constants/*"],
+			"@/lib/*": ["../src/lib/*"],
+			"@/middleware": ["../middleware.ts"],
+			"@/models/*": ["../src/models/*"],
+			"@/redux/*": ["../src/redux/*"],
+			"@/styles/*": ["../src/styles/*"],
+			"@/utils/*": ["../src/utils/*"],
+			"@/types/*": ["../src/types/*"],
+			"@/types": ["../src/types/index"],
+			"@/types/": ["../src/types/index"],
+			"@/types/standard": ["../src/types/standard"],
+			"@/hooks/*": ["../src/hooks/*"],
+			"@coinbase/wallet-sdk": ["../@types/coinbase-sdk.d.ts"]
+		},
+		"types": ["node", "jest"],
+		"resolveJsonModule": true,
+		"isolatedModules": true
+	},
+	"include": [
+		"/**/*.ts",
+		"../@types",
+		"../src/models/**/*",
+		"../src/utils/**/*",
+		"../src/lib/**/*"
+	],
+	"exclude": ["node_modules"],
+	"tsc-alias": {
+		"verbose": true
+	}
+}

@@ -1,0 +1,247 @@
+// fonts
+
+/** Global Styling **/
+:root {
+	--primary-color: rgb(28, 176, 255);
+	--primary-color-hover: #faca7d;
+	--dark-color: #343a40;
+	--light-color: #f4f4f4;
+	--danger-color: #f75050;
+	--success-color: #90dc96;
+	--border-color: #212121;
+	--toastify-color-light: #fff !important;
+	--toastify-color-dark: #0c0c0c !important;
+	--toastify-color-info: #3498db !important;
+	--toastify-color-success: #90dc96 !important;
+	--toastify-color-warning: #f1c40f !important;
+	--toastify-color-error: #f75050 !important;
+	--toastify-color-transparent: rgba(255, 255, 255, 0.7) !important;
+	--toastify-icon-color-info: var(--toastify-color-info) !important;
+	--toastify-icon-color-success: var(--toastify-color-success) !important;
+	--toastify-icon-color-warning: var(--toastify-color-warning) !important;
+	--toastify-icon-color-error: var(--toastify-color-error) !important;
+	--toastify-toast-max-height: 90px;
+	--navbar-height: 73px;
+	--sidebar-width: 256px;
+	--background-color: #000000;
+	--text-input-border-color: ;
+	--text-input-border-radius: 0px;
+	--card-color: #000000;
+	--card-border-radius: 0px;
+}
+
+@font-face {
+	font-family: 'FavoritPro';
+	src: url('/fonts/FavoritPro/FavoritPro-Regular.otf');
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'FavoritPro';
+	src: url('/fonts/FavoritPro/FavoritPro-Medium.otf');
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'FavoritPro';
+	src: url('/fonts/FavoritPro/FavoritPro-Bold.otf');
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SctoGroteskA';
+	src: url('/fonts/SctoGroteskA/SctoGroteskA-Regular.otf');
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SctoGroteskA';
+	src: url('/fonts/SctoGroteskA/SctoGroteskA-Medium.otf');
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SctoGroteskA';
+	src: url('/fonts/SctoGroteskA/SctoGroteskA-Bold.otf');
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'SctoGroteskA', Helvetica, 'Apple Color Emoji', Arial, sans-serif,
+		'Segoe UI Emoji', 'Segoe UI Symbol';
+	-webkit-overflow-scrolling: touch;
+	font-size: 14px;
+	font-smooth: antialiased;
+}
+
+p {
+	margin: 0;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+ol,
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+mark {
+	background: #dbf989 !important;
+}
+
+h1:not(.placeholder):before,
+h2:not(.placeholder):before,
+h3:not(.placeholder):before,
+h4:not(.placeholder):before {
+	display: none !important;
+	opacity: 0 !important;
+}
+
+h1:hover .heading-actions,
+h2:hover .heading-actions,
+h3:hover .heading-actions {
+	display: none !important;
+}
+
+li p {
+	margin: 0px !important;
+}
+
+blockquote:before {
+	background: #dbf989 !important;
+}
+
+h1 {
+	font-weight: 700;
+	line-height: 1.2;
+	font-size: 40px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 1.6em 0 0.3em !important;
+
+	&:first-child {
+		margin: 0 0 0.3em !important;
+	}
+}
+
+input[type='file'] {
+	opacity: 0;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'SctoGroteskA', Helvetica, 'Apple Color Emoji', Arial, sans-serif,
+		'Segoe UI Emoji', 'Segoe UI Symbol';
+	font-smooth: always;
+	outline: none;
+
+	-webkit-font-smoothing: antialiased;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+.notice-block.tip {
+	background: #dbf989 !important;
+	color: #00c805 !important;
+}
+
+.notice-block {
+	border-radius: 16px !important;
+}
+
+.notice-block.warning {
+	background: rgba(255, 80, 0, 0.7) !important;
+}
+
+.ReactModal__Overlay {
+	z-index: 10000;
+	opacity: 0;
+	transition: opacity 0.2s ease-out;
+}
+
+.ReactModal__Overlay--after-open {
+	opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+	opacity: 0;
+}
+
+.placeholder:before {
+	color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.block-menu-trigger {
+	margin-left: -32px !important;
+	margin-top: 4px !important;
+}
+
+.modal {
+	width: 100%;
+
+	.close-bar {
+		align-items: center;
+		display: flex;
+		width: '100%';
+	}
+	.close-icon {
+		color: #b8b8b8;
+		cursor: pointer;
+		float: right;
+		font-size: 22px;
+		margin-left: auto;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	.title {
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.center-text {
+		color: #777;
+		font-size: 14px;
+		text-align: center;
+	}
+}
+
+/** Toast **/
+
+.Toastify {
+	z-index: 10000 !important;
+}
+
+.w3ajs-social-logins {
+	display: none;
+}

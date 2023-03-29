@@ -1,0 +1,19 @@
+{
+  "workbench.colorCustomizations": {
+    "editorError.foreground": "#ff000088",
+    "editorWarning.foreground": "#ffe60033",
+    "editorInfo.foreground": "#00ff0088"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.insertSpaces": false,
+  "editor.formatOnSave": true
+}

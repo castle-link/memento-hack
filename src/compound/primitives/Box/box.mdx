@@ -1,0 +1,47 @@
+import { Meta, Story, ArgsTable, Canvas } from '@storybook/addon-docs/blocks'
+import LinkTo from '@storybook/addon-links/react'
+import { Box } from './box.component'
+
+<Meta title="Layout Containers/Box" component={Box} />
+
+# Box
+
+Box is an empty layout container. You can use it to group together components
+and control their layout with each other.
+
+See the <LinkTo kind="Design System/Layout">System/Layout section</LinkTo> for
+more information.
+
+In addition, `Box` lets you apply background colours.
+
+## Stories
+
+### With Background Color
+
+<Canvas>
+	<Story id="layout-containers-box--background-color" />
+</Canvas>
+
+## Supported Property Mixins
+
+Spacing:
+
+<Canvas>
+	<Story id="layout-containers-box--mixins-spacing" />
+</Canvas>
+
+Stacked:
+
+<Canvas>
+	<Story id="layout-containers-box--mixins-stacked" />
+</Canvas>
+
+Stackee:
+
+<Canvas>
+	<Story id="layout-containers-box--mixins-stackee" />
+</Canvas>
+
+## Props
+
+<ArgsTable of={Box} />

@@ -1,0 +1,48 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"target": "es5",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"paths": {
+			"@/blockchain/*": ["src/blockchain/*"],
+			"@/constants/*": ["src/constants/*"],
+			"@/context/*": ["src/context/*"],
+			"@/config": ["src/config/index.ts"],
+			"@/components/*": ["src/components/*"],
+			"@/compound": ["src/compound/index.ts"],
+			"@/compound/*": ["src/compound/*"],
+			"@/hooks/*": ["src/hooks/*"],
+			"@/lib/*": ["src/lib/*"],
+			"@/middleware": ["middleware.ts"],
+			"@/models/*": ["src/models/*"],
+			"@/models": ["src/models/index"],
+			"@/queries": ["src/queries/index"],
+			"@/queries/*": ["src/queries/*"],
+			"@/redux/*": ["src/redux/*"],
+			"@/styles/*": ["src/styles/*"],
+			"@/utils/*": ["src/utils/*"],
+			"@/types": ["src/types/index.ts"]
+		},
+		"incremental": true
+	},
+	"include": [
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		"pages/_document.tsx",
+		"pages/index.js",
+		"pages/index.js"
+	],
+	"exclude": ["node_modules"]
+}

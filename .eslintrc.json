@@ -1,0 +1,7 @@
+{
+	"extends": ["next", "next/core-web-vitals", "prettier"],
+	"rules": {
+		"import/no-anonymous-default-export": "off",
+		"import/no-cycle": "warn"
+	}
+}

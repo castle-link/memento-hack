@@ -1,0 +1,72 @@
+import { Meta, Story, ArgsTable, Canvas } from '@storybook/addon-docs/blocks'
+import { UnstyledButton } from './unstyled-button.component'
+
+<Meta title="Actions/Unstyled Button" component={UnstyledButton} />
+
+# Unstyled Button
+
+- [Actions Accessibility Tips](/?path=/story/actions-accessibility-tips--page)
+
+UnstyledButton is an invisible "hotspot" that can be used to make a chunk of
+child UI clickable.
+
+Wrap anything in this component and provide an `onClick` handler to create a
+button or an `href` to create a link.
+
+It behaves like a normal React button where the callback is called with one
+argument `SyntheticEvent<HTMLButtonElement>`. It will also supply table-stakes
+a11y functionality like a focus state, etc.
+
+## As Button
+
+<Canvas>
+	<Story id="actions-unstyled-button--default" />
+</Canvas>
+
+## As Link
+
+<Canvas>
+	<Story id="actions-unstyled-button--as-a-link" />
+</Canvas>
+
+## With Border Radius
+
+<Canvas>
+	<Story id="actions-unstyled-button--border-radius" />
+</Canvas>
+
+## Focus Styles
+
+<Canvas>
+	<Story id="actions-unstyled-button--focus-styles" />
+</Canvas>
+
+## Dark Background Focus Styles
+
+<Canvas>
+	<Story id="actions-unstyled-button--dark-background-focus-styles" />
+</Canvas>
+
+## Supported Property Mixins:
+
+### Spacing:
+
+<Canvas>
+	<Story id="actions-unstyled-button--mixins-spacing" />
+</Canvas>
+
+### Stackee:
+
+<Canvas>
+	<Story id="actions-unstyled-button--mixins-stackee" />
+</Canvas>
+
+### Stacking:
+
+<Canvas>
+	<Story id="actions-unstyled-button--mixins-stacked" />
+</Canvas>
+
+## Props
+
+<ArgsTable of={UnstyledButton} />

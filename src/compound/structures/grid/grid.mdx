@@ -1,0 +1,70 @@
+import {
+	Meta,
+	Story,
+	Props,
+	Preview,
+	ArgsTable,
+} from '@storybook/addon-docs/blocks'
+import { Grid } from './grid.component'
+
+<Meta title="Design System/Layout/Grid" component={Grid} />
+
+# Grid
+
+Grid and GridItem implement the top-level layout structures used at the page level.
+Note that Grids are not designed to be nested.
+
+## Columns
+
+This grid slices up the screen into a set of vertical 'columns', with fixed
+gutters in between. You can wrap your components in the `<GridItem>` component,
+specifying how many columns you want it to take up (i.e. span) horizontally.
+
+If you specify a set of `<GridItem>`s whose spans add up to more than the total
+number of columns, the grid items will wrap to the next row. The grid may also
+wrap if you use too many gutters at the small breakpoint since the gutters are
+30px, e.g. `11*30=330` which is larger than the smallest phone we support
+(`320px`).
+
+At this time, all breakpoints use a 12-column grid.
+
+## Breakpoints
+
+You can specify the column span independently for each breakpoint:
+
+## Example usage
+
+```jsx
+<Grid>
+	<GridItem sm={v} md={x} lg={y} xl={z}>
+		{' '}
+		...{' '}
+	</GridItem>
+	<GridItem ssm={v} md={x} lg={y} xl={z}>
+		{' '}
+		...{' '}
+	</GridItem>
+</Grid>
+```
+
+- `<Grid sm={4}>`: Spans 4 columns in all breakpoints
+- `<Grid sm={4} md={6}`>: Spans 4 cols in the small breakpoint and 6 in the
+  medium, large and xlarge breakpoints.
+- `<Grid sm={4} md={6} lg={5}`>: Spans 4 cols in the small breakpoint, 6 in the
+  medium breakpoint, 5 in the large breakpoint and xlarge breakpoints.
+
+## Stories
+
+### Default
+
+<Story id="design-system-layout-grid--full-grid" />
+
+## Supported Property Mixins - GridItem
+
+Stacking:
+
+<Canvas>
+	<Story id="design-system-layout-grid--mixins-stacking" />
+</Canvas>
+
+<ArgsTable of={Grid} />
