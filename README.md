@@ -46,7 +46,7 @@ The following providers are support for user authentication. By default Web3auth
 #### Web3auth with @safe-global/authKit (Simplest)
 
 1. Create a web3auth account with web3auth.
-2. Set env vars NEXT_PUBLIC_MAGIC_API_KEY and MAGIC_API_SECRET
+2. Set env vars `NEXT_PUBLIC_WEB3_AUTH_CLIENT_ID` and `NEXT_PUBLIC_WEB3_AUTH_NETWORK`
 
 #### Web3auth with the no modal SDK (Full UI control)
 
@@ -55,12 +55,12 @@ The following providers are support for user authentication. By default Web3auth
    - set `kid` to `WEB3_AUTH_VERIFIER_KEY_ID` when prompted
 3. Create an private key with and encrypt it with `WEB3_AUTH_VERIFIER_ENCRYPTION_PASSPHRASE`
 4. Export the encrypted private key to a pem file at `src/lib/web3auth/privateKey.pem`
-5. Set NEXT_PUBLIC_WEB3_AUTH_NETWORK, NEXT_PUBLIC_WEB3_AUTH_CLIENT_ID, WEB3_AUTH_VERIFIER_KEY_ID, and WEB3_AUTH_VERIFIER_ENCRYPTION_PASSPHRASE
+5. Set `NEXT_PUBLIC_WEB3_AUTH_NETWORK`, `NEXT_PUBLIC_WEB3_AUTH_CLIENT_ID`, `WEB3_AUTH_VERIFIER_KEY_ID`, and `WEB3_AUTH_VERIFIER_ENCRYPTION_PASSPHRASE`
 
 #### magic.link
 
 1. Create magic link account at magic.link
-2. Set env vars NEXT_PUBLIC_MAGIC_API_KEY and MAGIC_API_SECRET
+2. Set env vars `NEXT_PUBLIC_MAGIC_API_KEY` and `MAGIC_API_SECRET`
 
 ### Stripe setup
 
@@ -101,4 +101,5 @@ yarn run:workers
 Each time a worker is updated, you will need to run `yarn build:workers` again
 
 # Contracts
+
 Custom smart contracts were developed for this hack. You can find them in the `contracts` folder in the root directory. The contracts were developed with Foundry.
