@@ -14,7 +14,7 @@ First, run the development server:
 
 ```bash
 git clone git@github.com:Castle-Link/memento-hack.git
-cd memento-hach
+cd memento-hack
 
 nvm install # if using NVM
 yarn
