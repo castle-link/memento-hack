@@ -1,6 +1,6 @@
 # Memento
 
-Mint and collect amazing media
+Mint and collection web3 media with just an email address
 
 ### Prerequisites
 
